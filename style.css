@@ -219,6 +219,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     gap: 40px;
   }
 
@@ -232,11 +233,10 @@
 
   #contact-right-heading {
     font-size: 48px;
-    letter-spacing: 5px;
   }
 
   .contact-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 40px;
     padding: 40px 20px;
     height: auto;
@@ -273,7 +273,6 @@
 
   #contact-right-heading {
     font-size: 36px;
-    letter-spacing: 3px;
   }
 
   .contact-left-title hr {
