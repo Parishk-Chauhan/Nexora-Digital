@@ -107,7 +107,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: linear-gradient(var(--color-brand-light),var(--color-brand-base));
+    /* background: linear-gradient(var(--color-brand-light),var(--color-brand-base)); */
+    background-color: white;
 }
 .contact-left{
     display: flex;
@@ -131,7 +132,7 @@
 .contact-inputs{
     width: 400px;
     height: 50px;
-    border: none;
+    border: solid 2px var(--color-black);
     outline: none;
     padding-left: 25px;
     font-weight: 500;
@@ -157,6 +158,10 @@
     border-radius: 50px;
     background: linear-gradient(270deg, var(--color-success,var(--color-success-light)));
     cursor: pointer;
+}
+#contact-right-heading{
+    font-size: 120px;
+    /* font-family: 'Dancing Script', cursive !important; */
 }
 
 /* Animations :- */
