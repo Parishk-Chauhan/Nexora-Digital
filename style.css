@@ -1,0 +1,134 @@
+:root {
+  /* === Brand Colors === */
+  --color-brand-dark: #3D52A0;
+  --color-brand-base: #7091E6;
+  --color-brand-muted: #8697C4;
+  --color-brand-light: #ADBBDA;
+  --color-brand-pale: #EDE8F5;
+
+  /* === Neutral Colors === */
+  --color-white: #ffffff;
+  --color-gray-50: #f9f9fb;
+  --color-gray-100: #f2f2f5;
+  --color-gray-200: #e0e0e6;
+  --color-gray-300: #c0c0cc;
+  --color-gray-400: #a0a0b0;
+  --color-gray-500: #808090;
+  --color-gray-600: #606070;
+  --color-gray-700: #404050;
+  --color-gray-800: #303040;
+  --color-gray-900: #202030;
+  --color-black: #000000;
+
+  /* === Status Colors === */
+  --color-success: #4CAF50;
+  --color-success-light: #DFF5E1;
+  --color-warning: #FFC107;
+  --color-warning-light: #FFF4D9;
+  --color-error: #F44336;
+  --color-error-light: #FEE3E3;
+  --color-info: #2196F3;
+  --color-info-light: #D6EFFF;
+
+  /* === Shadows (Optional) === */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #F9FAFB;
+}
+#logo{
+    color: #111827;
+    font-size: 20px;
+    width: 20px;
+}
+#logo_top{
+    margin-left: 13px;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#main_body_heading{
+    font-size: 120px;
+}
+.ques_font{
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+.heading_font{
+    font-family: "Playwrite VN Guides", cursive;
+}
+#main_ques {
+    font-size: 40px;
+}
+#main_section{
+    background: linear-gradient(var(--color-brand-base), var(--color-brand-light));
+}
+    
+/* Contact Us form :-  */
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(var(--color-brand-light),var(--color-brand-base));
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: var(--color-gray-400);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: var(--color-brand-dark);
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid var(--color-info);
+}
+.contact-inputs::placeholder{
+    color: var(--color-black);
+}
+.contact-left button{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: var(--color-black);
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, var(--color-success,var(--color-success-light)));
+    cursor: pointer;
+}
