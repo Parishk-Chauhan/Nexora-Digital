@@ -132,3 +132,23 @@
     background: linear-gradient(270deg, var(--color-success,var(--color-success-light)));
     cursor: pointer;
 }
+
+/* Animations :- */
+
+#greeting {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* for animated text font style  */
+
+.lang-default {
+  font-family: "Playwrite VN Guides", cursive;
+}
+
+.lang-devanagari {
+  font-family: 'Baloo 2', cursive;
+}
+
+.lang-japanese {
+  font-family: 'Noto Sans JP', sans-serif;
+}
