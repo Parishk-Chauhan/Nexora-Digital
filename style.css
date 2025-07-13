@@ -34,12 +34,21 @@
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+  --color-primary-dark: #2B2D42;
+  --color-primary: #3D52A0;
+  --color-accent: #7091E6;
+  --color-bg: #F7F9FC;
+  --color-light-gray: #E6E9F0;
+  --color-off-white: #FFFFFF;
+  --color-muted-text: #6C6F7F;
 }
 *{
     text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .navbar{
     background-color: #F9FAFB;
@@ -58,6 +67,14 @@
     align-items: center;
     justify-content: center;
 }
+.main-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 30px;
+}
 #main_body_heading{
     font-size: 120px;
 }
@@ -70,10 +87,19 @@
 #main_ques {
     font-size: 40px;
 }
-#main_section{
-    background: linear-gradient(var(--color-brand-base), var(--color-brand-light));
+/* fonts styles */
+.serif-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 600;
 }
-    
+
+.sans-subtext {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
 /* Contact Us form :-  */
 
 .contact-container{
@@ -151,4 +177,15 @@
 
 .lang-japanese {
   font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* main section */
+
+.main-para {
+    padding: 10px;
+}
+
+#main_section{
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); 
 }
