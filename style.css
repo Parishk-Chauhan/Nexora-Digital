@@ -49,17 +49,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-.navbar{
-    background-color: #F9FAFB;
-}
-#logo{
-    color: #111827;
-    font-size: 20px;
-    width: 20px;
-}
-#logo_top{
-    margin-left: 13px;
+    list-style: none;
 }
 .container{
     display: flex;
@@ -293,4 +283,42 @@
     padding: 12px 24px;
     font-size: 14px;
   }
+}
+
+/* Navbar */
+.navbar{
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: white;
+  padding: 1% 5%;
+
+}
+.navbar ul{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: flex-end;
+  align-items: center;
+  color: black;
+}
+.navbar a {
+  color: inherit;
+}
+.navbar ul li:first-child{
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav-links{
+  font-size: 20px;
+}
+
+/* Logo */
+
+#logo {
+  font-size: 25px;
+  font-weight: 600;
+
 }
